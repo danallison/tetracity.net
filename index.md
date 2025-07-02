@@ -4,9 +4,13 @@ Tetra [City] is a pattern and naming convention for bringing online community co
 
 ## What does "Tetra" mean?
 
-Tetra is Greek for “four”, as in tetrahedron. The number four represents the middle triangle that emerges when you arrange three triangles to form a larger triangle. That middle triangle made from empty space is what makes the larger triangle greater than the sum of its parts. When you apply this architecture recursively, you get the famous Sierpinski triangle, which is the design that the [Tetra logo generator](/logo-generator) outputs.
+<img src="/four-triangles.png" width="200px">
 
-Also, Tetra is a reference to the game of Tetris, which is a helpful metaphor for understanding the challenge of bringing online connections down to Earth in a specific geographic location. You must figure out how to deal with physical constraints that are not present online. But if you succeed, then your scene and community becomes unblocked and capable of supporting everyone.
+Tetra is Greek for “four”. The number four represents the middle triangle that emerges when you arrange three triangles to form a larger triangle. That middle triangle made from empty space is what makes the larger triangle greater than the sum of its parts. When you apply this architecture recursively, you get the famous Sierpinski triangle, which is the design that the [Tetra logo generator](/logo-generator) outputs.
+
+<img src="/tetris.png" width="200px">
+
+Also, Tetra is a reference to the game of Tetris, which is a helpful metaphor for understanding the challenge of bringing online connections down to Earth in a specific geographic location. You must figure out how to deal with physical constraints that are not present online. But if you succeed, then your scene and community become unblocked and capable of supporting everyone.
 
 ## Cities
 
