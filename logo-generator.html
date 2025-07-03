@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sierpinski Triangle Logo Generator</title>
+<style>
+  body {
+    margin: 0; display: flex; flex-direction: column; align-items: center; height: 100vh;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  }
+  #controls { margin: 1em; display: flex; flex-direction: column; align-items: center; gap: 0.5em; }
+  svg { margin: 2em; width: 80vmin; height: calc(80vmin * 0.866); }
+  polygon { fill: none; stroke: #000; stroke-width: 1; }
+  input[type="url"] { width: 300px; }
+</style>
+</head>
+<body>
+  <div id="controls">
+    <a href="/">tetracity.net</a>
+    <h1>Sierpinski Triangle Logo Generator</h1>
+    <div>Image rendered as SVG. Use a screenshot tool to convert to raster image (png, jpeg, etc.).</div>
+    <label>Upload new center image (only works in Firefox):
+      <input type="file" id="imgInput" accept="image/*">
+    </label>
+    <div style="font-style: italic;">or</div>
+    <label>Load image from URL (works in all browsers):
+      <input type="url" id="imgUrlInput" placeholder="https://example.com/image.png">
+      <button id="urlSubmitBtn">Submit</button>
+    </label>
+  </div>
+  <svg id="sierpinskiSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="443" viewBox="0 0 512 443"></svg>
+<script>
+(() => {
+  const svg           = document.getElementById('sierpinskiSvg');
+  const imgUrlInput   = document.getElementById('imgUrlInput');
+  const urlSubmitBtn  = document.getElementById('urlSubmitBtn');
+  const imgInput      = document.getElementById('imgInput');
+  const controls      = Array.from(document.querySelectorAll('#controls input, #controls button'));
+
+  const side  = 512;
+  const H     = side * Math.sqrt(3) / 2;
+  const depth = 9;
+
+  let img = new Image();
+
+  function disableControls() { controls.forEach(i => i.disabled = true); }
+  function enableControls()  { controls.forEach(i => i.disabled = false); }
+
+  function clearSvg() {
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+  }
+
+  function renderSvg() {
+    disableControls();
+    clearSvg();
+    const defs = document.createElementNS('http://www.w3.org/2000/svg','defs');
+    svg.appendChild(defs);
+
+    let clipId = 0;
+    const queue = [{ x: 0, y: H, s: side, d: depth }];
+    const SVG_NS = 'http://www.w3.org/2000/svg';
+    const XLINK_NS = 'http://www.w3.org/1999/xlink';
+
+    while (queue.length) {
+      const { x, y, s, d } = queue.shift();
+      const h = s * Math.sqrt(3) / 2;
+      if (d === 0) {
+        const poly = document.createElementNS(SVG_NS,'polygon');
+        poly.setAttribute('points', `${x},${y} ${x+s},${y} ${x+s/2},${y-h}`);
+        svg.appendChild(poly);
+      } else {
+        const id = `clip${clipId++}`;
+        const cp = document.createElementNS(SVG_NS,'clipPath'); cp.setAttribute('id', id);
+        const tri = document.createElementNS(SVG_NS,'polygon');
+        tri.setAttribute('points', `${x+s/2},${y} ${x+3*s/4},${y-h/2} ${x+s/4},${y-h/2}`);
+        cp.appendChild(tri);
+        defs.appendChild(cp);
+
+        const im = document.createElementNS(SVG_NS,'image');
+        im.setAttributeNS(XLINK_NS, 'xlink:href', img.src);
+        im.setAttribute('x', x + s/4);
+        im.setAttribute('y', y - h/2);
+        im.setAttribute('width', s/2);
+        im.setAttribute('height', h/2);
+        im.setAttribute('clip-path', `url(#${id})`);
+        svg.appendChild(im);
+
+        const outline = document.createElementNS(SVG_NS,'polygon');
+        outline.setAttribute('points', `${x+s/2},${y} ${x+3*s/4},${y-h/2} ${x+s/4},${y-h/2}`);
+        svg.appendChild(outline);
+
+        const s2 = s/2, h2 = h/2;
+        queue.push({ x, y, s: s2, d: d-1 });
+        queue.push({ x: x+s2, y, s: s2, d: d-1 });
+        queue.push({ x: x+s2/2, y: y-h2, s: s2, d: d-1 });
+      }
+    }
+
+    enableControls();
+  }
+
+  function submitUrl() {
+    const url = imgUrlInput.value.trim();
+    if (!url) return;
+    img.onload = renderSvg;
+    img.src = url;
+  }
+
+  urlSubmitBtn.addEventListener('click', submitUrl);
+  imgUrlInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      submitUrl();
+    }
+  });
+
+  imgInput.addEventListener('change', () => {
+    const file = imgInput.files[0]; if (!file) return;
+    const blobUrl = URL.createObjectURL(file);
+    img.onload = () => { URL.revokeObjectURL(blobUrl); renderSvg(); };
+    img.src = blobUrl;
+  });
+
+  // initial render with default
+  img.src = 'seattle-space-needle.png';
+  img.onload = renderSvg;
+})();
+</script>
+</body>
+</html>
