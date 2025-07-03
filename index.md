@@ -31,7 +31,7 @@ Tetrachromacy is a genetic condition in which individuals have four types of con
 
 ### 3. Unblocking
 
-<img src="/tetris.png" width="200px">
+<img src="/tetris-modern.png" width="200px">
 
 The game of Tetris is a helpful metaphor for understanding the challenge of bringing online connections down to Earth in a specific geographic location. You must figure out how to deal with physical constraints that are not present online. But if you succeed, then your scene and community become unblocked and capable of supporting everyone.
 
