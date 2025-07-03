@@ -2,7 +2,9 @@
 
 # Tetra [City]
 
-__Tetra [City]__ (e.g. Tetra Seattle) is an organizational pattern for bringing online connections down to Earth as in-person local scenes and communities. Anyone can start a Tetra. All you have to do is declare that you're starting a Tetra for your city or town or neighborhood and then start doing stuff under that banner. __Tetra [City]__ is simply a convenient default name, logo, and social template for a group identity that helps you build the local scene and community you want to see in the world.
+__Tetra [City]__ (e.g. Tetra Seattle) is an organizational pattern for bringing online connections down to Earth as in-person local scenes and communities.
+
+Anyone can start a Tetra. All you have to do is declare that you're starting a Tetra for your city or town or neighborhood and then start doing stuff under that banner. __Tetra [City]__ is simply a convenient default name, logo, and social template for a group identity that helps you build the local scene and community you want to see in the world.
 
 The concept of a Tetra was originally inspired by the concept of a [neighborhood campus](https://fractalcampus.com/) trailblazed by [Fractal NYC](https://fractalnyc.com/). Tetra also draws inspiration from practices like [Microsolidarity](https://www.microsolidarity.cc/) and events like [Vibecamp](https://vibe.camp/) that bring online connections into offline physical space.
 
@@ -32,6 +34,12 @@ Tetrachromacy is a genetic condition in which individuals have four types of con
 <img src="/tetris.png" width="200px">
 
 The game of Tetris is a helpful metaphor for understanding the challenge of bringing online connections down to Earth in a specific geographic location. You must figure out how to deal with physical constraints that are not present online. But if you succeed, then your scene and community become unblocked and capable of supporting everyone.
+
+### 4. Spontaneously synchronizing
+
+<img src="/fish-school-and-bird-flock.jpg" height="150px">
+
+Tetra fish are a type of schooling fish that synchronize their movements spontaneously, similar to other animal species like birds that move as flocks. In the context of __Tetra [City]__, we synchronize spontaneously through "yes, and"-ing each other's ideas and contributions. Improv is the basic organizing principle.
 
 ## About this website
 
