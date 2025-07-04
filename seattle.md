@@ -1,5 +1,7 @@
 # Tetra Seattle
 
+<img src="/seattle-logo.png" width="200px">
+
 ## About
 
 Tetra Seattle was started in 2025 by a handful of twitter friends who decided to enroll in [Fractal's Campus Accelerator Program](https://fractalcampus.com/).
