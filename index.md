@@ -4,13 +4,13 @@
 
 __Tetra [City]__ (e.g. Tetra Seattle) is an organizational pattern for bringing online connections down to Earth as in-person local scenes and communities.
 
-The topology of the internet is very different than the topology of the physical world. This is a good thing! The topology of the internet can make it easier to find people you vibe with. The problem is it's not always easy to map those resonant relationships from online space to offline space. The boundaries that define each space are very different.
+The topology of the internet is very different than the topology of the physical world. This is a good thing! The topology of the internet can make it easier to find people you vibe with. The problem is it's not always easy to map those resonant relationships from online space to offline space.
 
-A Tetra is a declared group identity for an online social cluster and for a specific geographic location so that the people in the Tetra can have greater continuity between online and offline connection.
+A Tetra is a declared group identity for an online social cluster + a specific city or town so that the people in the Tetra can have greater continuity between online and offline connection.
 
 Anyone can start a Tetra. All you have to do is declare that you're starting a Tetra ("Tetra [your city/town]" is a good default name) and then start doing stuff under that banner. Boom! Your online friends who are in your city/town are now your offline friends as well, and you now have a platform for coordinating in-person events, finding project collaborators, potential roommates, potential partners, etc.
 
-The default boundaries of the Tetra are determined by the connections between its members, just like any ordinary social network. Additionally, it can be helpful to declare some additional inclusion criteria such as receiving an invite from a founding crew member or attending some minimum number of in-person events. A basic filter can go a long way towards maintaining the vibe of the group, and vibe stewardship is critical for the long-term sustainability of your Tetra.
+The default boundaries of the Tetra are determined by the connections between its members, just like any ordinary social network. Additional inclusion criteria may also be helpful, criteria such as receiving an invite from a founding crew member or attending some minimum number of in-person events. A basic filter can go a long way towards maintaining the vibe of the group. Vibe stewardship is critical for the long-term sustainability of your Tetra.
 
 The concept of a Tetra was originally inspired by the concept of a [neighborhood campus](https://fractalcampus.com/) trailblazed by [Fractal NYC](https://fractalnyc.com/). Tetra also draws inspiration from practices like [Microsolidarity](https://www.microsolidarity.cc/) and events like [Vibecamp](https://vibe.camp/) that bring online connections into offline physical space.
 
