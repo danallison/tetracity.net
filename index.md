@@ -27,6 +27,10 @@ The concept of a Tetra was originally inspired by the concept of a [neighborhood
 
 Tetra is Greek for the number four. The number four represents the middle triangle that emerges when you arrange three triangles to form a larger triangle. That middle triangle made from empty space is what makes the larger triangle greater than the sum of its parts. When you apply this architecture recursively, you get the famous Sierpinski triangle, which is the design that the [Tetra logo generator](/logo-generator) outputs.
 
+<img src="/geodesic-dome-frequency.jpg" width="400px">
+
+This fourth triangle is also the basic unit of the geometry of geodesic domes, which are extremely strong, efficient, and scalable structures. Geodesic domes are entirely self-supporting, meaning they do not require pillars or other support structures to prop them up. Likewise, a __Tetra [City]__ is a self-supporting social structure. It does not require any especially charismatic leaders or hypercompetent community organizers to keep it going. As long as people show up and participate, the Tetra supports itself.
+
 ### 2. Expanded vision
 
 <img src="/if-we-play-our-cards-right.jpg" width="300px">
