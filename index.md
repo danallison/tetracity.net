@@ -16,6 +16,7 @@ The concept of a Tetra was originally inspired by the concept of a [neighborhood
 
 ## Current Tetras
 
+* [Tetra Global](/global) (main online hub)
 * [Tetra Seattle](/seattle)
 * [Start your own Tetra](/start-a-tetra)
 
